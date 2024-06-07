@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./About.css";
+import profilePhoto from "../assets/Linkedin-Photo.JPEG";
   
 export default class About extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class About extends Component {
           <div className="centered">
             <img
               className="profile_image"
-              src= "./assets/Linkedin-Photo.JPEG"
+              src= { profilePhoto }
               alt="Profile Pic"
             ></img>
           </div>
