@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
-import { AddTodo } from "../component/AddTodo.js";
-import { Todos } from "../component/todos.js";
+import AddTodo from "../component/AddTodo.js";
+import Todos from "../component/todos.js";
 
 
 class Home extends Component {
@@ -32,8 +32,8 @@ class Home extends Component {
     return (
       <div className="Home">
         <h1>Todo's </h1>
-        <Todos todos={this.state.todos} />
-        <AddTodo addTodo={this.addTodo} />
+        <Todos todos= { this.state.todos } />
+        <AddTodo addTodo={ this.addTodo } />
       </div>
     );
   }
