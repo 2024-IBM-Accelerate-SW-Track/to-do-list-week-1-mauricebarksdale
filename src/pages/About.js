@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
+import "./About.css";
+import profilePhoto from "../assets/Linkedin-Photo.JPEG";
   
 export default class About extends Component {
   render() {
     return (
       <div>
-        <p>Design your About me page </p> 
+        <div className="split left">
+          <div className="centered">
+            <img
+              className="profile_image"
+              src= { profilePhoto }
+              alt="Profile Pic"
+            ></img>
+          </div>
+        </div>
+        <div className="split right">
+          <div className="centered">
+            <div className="name_title">Maurice Barksdale</div>
+            <div className="brief_description">
+              Hi! My name is Maurice Barksdale! I am a rising junior at the University of Maryland studying Computer Science! I'm into software engineering, application security, and web development. For summer 2024, I'm currently in IBM Accelerate, AmazonNext, and a software engineering apprenticeship at a local biotech company! Outside of tech, I'm into anime, photography, and video editing! Excited to connect with you all!
+            </div>
+          </div>
+        </div>
       </div>
-    )
+    );
   }
 }
